@@ -30,8 +30,11 @@ Note: If the browser on http://localhost:4000 only says error and is empty other
 yarn add react-router react-router-dom
 ```
 
+Add authentication:
 
-
+```
+yarn add apollo-link-context
+```
 
 
 
