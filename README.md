@@ -1,3 +1,42 @@
+Hackernews Built in React and Apollo (Demo from howtographql.com)
+
+Other dependencies:
+
+```
+yarn add apollo-boost react-apollo graphql
+```
+More on dependencies above:
+apollo-boost offers some convenience by bundling several packages you need when working with Apollo Client:
+
+apollo-client: Where all the magic happens
+apollo-cache-inmemory: Our recommended cache
+apollo-link-http: An Apollo Link for remote data fetching
+apollo-link-error: An Apollo Link for error handling
+apollo-link-state: An Apollo Link for local state management
+graphql-tag: Exports the gql function for your queries & mutations
+react-apollo contains the bindings to use Apollo Client with React.
+graphql contains Facebook’s reference implementation of GraphQL - Apollo Client uses some of its functionality as well.
+
+There is one thing left to do before you can start your server and begin sending queries and mutations to it. The Prisma database service needs to be deployed so the server can access it.
+
+```
+yarn install
+yarn prisma deploy
+```
+
+Note: If the browser on http://localhost:4000 only says error and is empty otherwise, you probably forgot to have your server running. Note that for the app to work the server needs to run as well - so you have two running processes in your terminal: One for the server and one for the React app. To start the server, navigate into the server directory and run yarn start.
+
+```
+yarn add react-router react-router-dom
+```
+
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
